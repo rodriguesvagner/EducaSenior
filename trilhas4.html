@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaSenior</title>
+    <style>
+        
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            background-color: #480ca8;
+            padding: 20px;
+            text-align: center;
+        }
+        #header img {
+            max-width: 2160px;
+            height: 200px;
+        }
+        #options {
+            background-color: #f2f2f2;
+            padding: 10px 0;
+            text-align: center;
+        }
+        #options ul {
+            list-style: none;
+            padding: 0;
+        }
+        #options li {
+            display: inline;
+            margin-right: 20px;
+        }
+        #options a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        #user-menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            display: none;
+            z-index: 1000;
+        }
+        #user-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        #user-menu li {
+            padding: 10px;
+            text-align: center;
+        }
+        #user-menu a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        #user-menu a:hover {
+            background-color: #0073e6;
+            color: #fff;
+        }
+
+        
+        #my-courses-list {
+            list-style: none;
+            padding: 0;
+        }
+        #my-courses-list li {
+            margin: 20px 0;
+        }
+        .course-options {
+            display: none;
+            list-style: none;
+            padding: 0;
+        }
+        .course-options li {
+            text-align: center;
+            padding: 10px;
+        }
+        .show-options {
+            display: block;
+        }
+
+      
+
+        /* rodapé */
+        footer {
+            background-color: #480ca8;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* css páginas comuns */
+        .page {
+            background-color: #E6E6FA;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .page h1 {
+            font-size: 28px;
+        }
+        .page h2 {
+            font-size: 24px;
+        }
+        .page p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .page ul {
+            text-align: left;
+        }
+
+       #options li a:hover {
+            background-color: #0073e6; 
+            color: #fff; 
+            border-radius: 4px; 
+            transition: background-color 0.3s ease, color 0.3s ease; 
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img src="file://C:\Users\Vagner Rodrigues\Desktop\EducaSenior\Educasenior.jpg" alt="EducaSenior">
+        <div id="user-avatar">
+            <img src="caminho-para-foto-do-aluno.jpg" alt="Foto do Aluno" id="user-photo">
+            <div id="user-menu">
+                <ul>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Configurações</a></li>
+                    <li><a href="#">Deslogar</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="options">
+        <ul>
+            <li><a href="#" onclick="showPage('page-home')">Início</a></li>
+            <li><a href="#" onclick="showPage('page-my-courses')">Meus Cursos</a></li>
+            <li><a href="#">Biblioteca Virtual</a></li>
+        </ul>
+    </div>
+
+    <!-- página Início -->
+    <div id="page-home" class="page">
+        <h1>Bem-vindo ao EducaSênior!</h1>
+        <p>Nós acreditamos que a aprendizagem é uma jornada que nunca deve parar. É por isso que estamos aqui para ajudar jovens e adultos a trilharem o caminho da educação tardia com confiança e entusiasmo. Seja qual for a sua razão para buscar conhecimento, o EducaSênior está pronto para apoiá-lo em cada passo.</p>
+
+        <h2>Por que a Educação Tardia?</h2>
+        <p>Sabemos que a vida é repleta de reviravoltas e responsabilidades. Às vezes, a educação formal pode ficar em segundo plano. No entanto, nunca é tarde demais para aprender algo novo, aprimorar suas habilidades ou explorar novos horizontes. A educação tardia pode abrir portas, impulsionar carreiras e transformar vidas. É uma oportunidade que todos merecem aproveitar.</p>
+
+        <h2>O que Oferecemos?</h2>
+        <p>No EducaSênior, oferecemos uma ampla gama de recursos e cursos projetados especificamente para atender às necessidades de estudantes mais maduros. Nossos programas são flexíveis, acessíveis e adaptados às demandas do seu estilo de vida. Você encontrará:</p>
+        <ul>
+            <li>Cursos Online: Acesse uma variedade de cursos online de alta qualidade.</li>
+            <li>Recursos de Apoio: Conte com nossos guias, tutoriais e fóruns para obter suporte durante sua jornada de aprendizado.</li>
+            <li>Comunidade Engajada: Conecte-se com outros alunos adultos que compartilham seus objetivos e desafios. Troque experiências e inspire-se mutuamente.</li>
+            <li>Mentoria Personalizada: Receba orientação individual de instrutores experientes para ajudá-lo a alcançar seus objetivos educacionais.</li>
+        </ul>
+
+        <p>Aqui, Você é Prioridade!</p>
+        <p>No EducaSênior, entendemos que a educação tardia pode ser um desafio, mas também uma oportunidade incrível. Acreditamos no seu potencial e estamos aqui para apoiá-lo em sua jornada de aprendizado. Aproveite esta oportunidade para descobrir, crescer e realizar seus sonhos.</p>
+
+        <p>Junte-se a nós hoje e comece a sua jornada de educação tardia de forma confiante. O futuro está nas suas mãos, e nós estamos aqui para ajudar você a conquistá-lo.</p>
+    </div>
+
+    
+    <div id="page-my-courses" class="page">
+        <ul id="my-courses-list">
+            <li>
+                <a href="#">Comece Aqui</a>
+                <ul class="course-options">
+                    <li><a href="#">Ver Detalhes</a></li>
+                    <li><a href="#">Marcar como Concluído</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Curso 1</a>
+                <ul class="course-options">
+                    <li><a href="#">Ver Detalhes</a></li>
+                    <li><a href="#">Marcar como Concluído</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Curso 2</a>
+                <ul class="course-options">
+                    <li><a href="#">Ver Detalhes</a></li>
+                    <li><a href="#">Marcar como Concluído</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo da página aqui -->
+
+    <footer>
+         EducaSênior - Nunca é tarde para aprender!
+    </footer>
+    
+    <script>
+        
+        const userAvatar = document.getElementById('user-photo');
+        const userMenu = document.getElementById('user-menu');
+
+        userAvatar.addEventListener('click', () => {
+            userMenu.style.display = userMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Fechar o menu
+        document.addEventListener('click', (event) => {
+            if (!userAvatar.contains(event.target)) {
+                userMenu.style.display = 'none';
+            }
+        });
+
+        // mostrar/ocultar as opções em "meus crsos"
+        const myCoursesList = document.getElementById('my-courses-list');
+
+        myCoursesList.addEventListener('click', (event) => {
+            if (event.target.tagName === 'A') {
+                const options = event.target.nextElementSibling;
+                if (options && options.classList.contains('course-options')) {
+                    options.classList.toggle('show-options');
+                }
+            }
+        });
+
+        // Fechar as opções
+        document.addEventListener('click', (event) => {
+            if (!myCoursesList.contains(event.target)) {
+                const options = document.querySelectorAll('.course-options');
+                options.forEach((option) => {
+                    option.classList.remove('show-options');
+                });
+            }
+        });
+
+        // para mostrar/ocultar páginas
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach((page) => {
+                page.style.display = 'none';
+            });
+
+            const pageToShow = document.getElementById(pageId);
+            pageToShow.style.display = 'block';
+        }
+
+        
+        showPage('page-home');
+    </script>
+</body>
+</html>
